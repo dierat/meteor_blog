@@ -6,9 +6,11 @@
 </body>
 
 <template name="layout">
-	{{> header}}
-	{{> main}}
-	{{> footer}}
+  {{> header}}
+  <div id="content">
+    {{> yield}}
+  </div>
+  {{> footer}}
 </template>
 
 <template name="header">
